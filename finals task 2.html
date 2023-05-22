@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Lab Task 2</title>
+
+
+</head>
+<style>
+  .main-container {
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid black;
+   
+  }
+
+ 
+</style>
+<script>
+  function AddNum()
+  {
+  NUM1=document.getElementById("NUM1").value;
+  NUM2=document.getElementById("NUM2").value;
+  Add =(parseInt(NUM1)+parseInt(NUM2));
+
+  document.getElementById("total").value=Addition;
+  }
+
+  function SubNum()
+  {
+  NUM1=document.getElementById("NUM1").value;
+  NUM2=document.getElementById("NUM2").value;
+  Add =(parseInt(NUM1)-parseInt(NUM2));
+
+  document.getElementById("total").value=Subtraction;
+  }
+
+  function MultiNum()
+  {
+  NUM1=document.getElementById("NUM1").value;
+  NUM2=document.getElementById("NUM2").value;
+  Add =(parseInt(NUM1)*parseInt(NUM2));
+
+  document.getElementById("total").value=Multi;
+  }
+
+  function DivNum()
+  {
+  NUM1=document.getElementById("NUM1").value;
+  NUM2=document.getElementById("NUM2").value;
+  Add =(parseInt(NUM1)/parseInt(NUM2));
+
+  document.getElementById("total").value= Div;
+  }
+
+  function ClearNum(){
+    document.getElementById("Result").value = " ";
+    document.getElementById("Num1").value = " ";
+    document.getElementById("Num2").value = " ";
+}
+
+  function About()
+  {
+    alert("ewan");
+  }
+
+  function totalClick(click){
+    const items= document.getElementById('items');
+    const sumvalue= parseInt(items.innerText) + click;
+    console.log(sumvalue + click);
+    items.innerText= sumvalue;
+
+    if(sumvalue < 0){
+      items.innerText = 0;
+    }
+  }
+</script>
+
+<body>
+    
+    <div class="main-container"> 
+      <p>First Number: <input type="number" id="NUM1"></p><br>
+      <p>Second Number: <input type="number" id="NUM2"></p><br><br>
+
+       <input type="button" value="Addition" onclick="AddNum()">
+       <input type="button" value="Subtraction" onclick="SubNum()">
+       <input type="button" value="Multiply" onclick="MultiNum()">
+       <input type="button" value="Divide" onclick="DivNum()">
+       <input type="button" value="Clear" onclick="ClearNum()">
+       <input type="button" value="About" onclick="About()">
+
+
+
+      <p>The Result: </p>
+      <p id="total"></p>
+
+
+    </div>
+</body>
+</html>
