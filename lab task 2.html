@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FINAL TASK 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='lasb task 2.css'>
+    <script src='main.js'></script>
+
+    
+</head>
+<style>
+    body{
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+function Order(){  
+    itemNum = document.getElementById("items").innerText;
+    document.getElementById("item-num").innerHTML = itemNum;
+
+    item=document.getElementById("items").innerText;
+    product = "15.97";
+
+    itemcost = parseFloat(product)*parseFloat(item);
+    document.getElementById("itemcost").innerHTML = "$" + itemcost.toFixed(2);
+    ship = "4.99";
+
+    document.getElementById("ship").innerHTML = "4.99"
+
+    totalbefore = parseFloat(itemcost)+parseFloat(ship);
+    document.getElementById("totalbefore").innerHTML = "$" + totalbefore.toFixed(2);
+
+    tax = Math.round(parseFloat(totalbefore)*10)/100;
+    document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
+
+    total = parseFloat(totalbefore)+parseFloat(tax);
+    document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+}
+</style>
+<body>
+    
+    <h1>Finals Task 2</h1>
+
+    <p style="display:inline-block"> Basketball Products: </p>
+        <span id="items">0</span>
+        <button onclick="totalClick(-1)">-</button>
+        <button onclick="totalClick(1)">+</button><br>
+    
+    <p style="display:inline-block">Shipping and Handling Fee:</p>
+    <input type="text" placeholder="4.99" size="2" disabled="disabled" >
+    <br>
+    <input type="button" value="CHECK OUT" onclick="Order()">
+
+    <div>
+        <h2> Order Summary </h2>
+
+        <p style="display:inline-block; width:250px;"> Items( <span id="item-num"></span> ): </p>
+        <p id="itemcost" style="display:inline-block"> $0.00 </p>
+        <p style="display:block;margin:0px;"> </p>
+
+        <p style="display:inline-block;width:250px;"> Shipping and Handling: </p>
+        <p id="ship" style="display:inline-block"></p>
+        <p style="display:block;margin:0px;"></p>
+
+        <p style="display:inline-block;width:250px;"> Total before tax: </p>
+        <p id="totalbefore" style="display:inline-block"></p>
+        <p style="display:block;margin:0px;"></p>
+
+        <p style="display:inline-block;width:250px;"> Estimated tax(10%): </p>
+        <p id="tax" style="display:inline-block"> </p>
+        <p style="display:block;margin:0px;"></p>
+        <hr>
+
+        <h2 style="display:inline-block;width:250px;font-weight: bold;color: red;"> Order Total: </h2>
+        <h2 id="total" style="display:inline-block;font-weight: bold;color: red;"> $0.00</h2>
+
+    </div>
+    
+</body>
+</html>
