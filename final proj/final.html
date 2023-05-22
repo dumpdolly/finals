@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MARTIN BASICS | Official Sites</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src='main.js'></script>
+</head>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .nav-container{
+            width: 100%;
+            position: fixed;
+            z-index: 3;
+            
+        }
+        .logo-link{
+            width: fit-content;
+            height: 50PX;
+            object-fit: cover;
+            position: absolute;
+        }
+        #header{
+            position: relative;
+            left: 100px;
+            top: 5px;
+            text-decoration: none;
+        }
+        .logo-link>a{
+            text-decoration: none;
+        }
+        .mb
+        {
+            border-radius: 25px;
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            position: absolute;
+            left: 20px;
+            bottom: 5px;
+        }
+        .box1
+        {
+            border: 1px solid black;
+            background-color: black;
+            /* height: 40px; */
+        }
+
+        ul{
+            float: left;
+            color: white;
+        }
+
+        ul li
+        {
+            float: left;
+            left: 300%;
+            width: 100px;
+            font-size: 14px;
+            font-family: barlow condensed,sans-serif;
+            margin-top: -10px;
+            position: relative;
+            list-style-type: none; 
+        }
+
+        ul li a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+        h5
+        {
+            margin-top: 1px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 7px 12px;
+            left: -18%;
+            position: relative;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .subbox
+        {
+            border: 1px solid transparent;
+            background-color: white;
+            height: 50px;
+            width: 100%;
+            text-align: right;
+        }
+
+        ol{float: left;}
+        ol li
+        {
+            float: left;
+           
+            width: 100px;
+            left: 50%;
+            position: relative;
+            list-style-type: none;
+            font-family: barlow condensed,sans-serif;
+            font-size: 18px;
+        }
+
+        ol li a
+        {
+            color: black;
+            text-decoration: none;
+            
+        }
+        ol li a:hover{border-bottom: 4px solid red;}
+
+
+        h3{
+            color: red;
+            position: absolute;
+            left: 88.8%;
+            top: 8%;
+            width: 18px;
+            height: -50px;
+            border-radius: 100px;
+            text-align: center;
+            font-family: barlow condensed, sans-serif;
+        }
+
+            h2
+            {
+                position: relative;
+                text-transform: uppercase;
+                left: 0px;
+                top: 10px;
+                font-family: barlow condensed, sans-serif;
+                margin-top: 4px;
+            }
+
+        span {color: red;
+           }
+
+        .cover img
+        {
+            background-size: cover;
+            height: 590px;
+            width: 800px; 
+            transition: all 0.3s ease 0s;
+
+        }
+        
+        #cart{
+            position: relative;
+        }
+        .cover
+        {
+            background-color: linen;
+            height: 610px;
+        }
+        .text
+        {
+            position: absolute;
+            top: 20%;
+            right: 7%;
+            transition: all 0.3s ease 0s;
+        
+        }
+        h1
+        {
+            font-size: 40px;
+            font-family: barlow condensed, sans-serif;
+            text-transform: capitalize;
+            width: 200px;
+            word-spacing: -1px;
+            font-weight: bold;
+            line-height: 72px;
+            top: 160%;
+            right: 10%;
+            position: absolute;
+        }
+
+        h4
+        {
+            position: absolute;
+            top: 70%;
+            font-size: 20%;
+            font-family: barlow condensed, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+
+        form input[type="submit"]{
+            position:  absolute;
+            top: 86%;
+            padding: 10px;
+            text-transform: uppercase;
+            background-color: crimson;
+            color: white;
+            font-family: barlow condensed, sans-serif;
+            letter-spacing: 1px;
+            border: none;
+        }
+
+        form input[type="submit"]:hover{
+            background-color: red;
+        }
+
+        .cart {margin: 80px auto;}
+        table 
+        {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart-info
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        th
+        {
+            text-align: left;
+            padding: 5px;
+            color: #fff;
+        }
+
+        button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+.shop-now {
+ width: 12rem;
+ height: 50px;
+}
+
+.shop-now .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 2rem;
+ background: #282936;
+ border-radius: 1.625rem;
+}
+
+.shop-now .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+.shop-now .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 3rem;
+ background: none;
+}
+
+.shop-now .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+.shop-now .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: red;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+button:hover .circle {
+ width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+ color: #fff;
+}
+        
+      
+        #cart{
+            position: absolute;
+            right: 100px;
+            margin-top: 12px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 300px;
+            text-decoration: none;
+            padding: 2%;
+            transition: color 0.3s 0.1s ease-out;
+            
+        }
+
+        .facebook{
+            text-decoration:overline;
+            cursor: pointer;
+            transition: color 0.3s 0.1s ease-out;
+        }
+
+        .instagram{
+            text-decoration:overline;
+        }
+
+        .gmail{
+            text-decoration:overline;
+            
+        }
+        .links>button{
+            margin-left: 100px;
+            margin-top: 50%;
+            margin-bottom: 10px;
+            
+        }
+
+        b:hover {
+  color: #fff;
+  border: 3px solid white;
+}
+
+      /* about css*/
+
+      body{
+        background-color: linen;
+      }
+
+        h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h2{
+    font-style: italic;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+        <!--clothing-->
+        
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 200vh;  
+    background-color: linen;
+}
+.nav{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 25PX;
+    display: flex;
+    align-items: center;
+    padding: 10px 2%;
+    top: 0%;
+    left: 0;
+    z-index: 16;
+}
+.martin-basics{
+    margin-right: auto;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2em;
+    width: fit-content;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: barlow condensed,sans-serif;
+    color: rgba(32, 32, 188, 0.806);
+    object-fit: cover;
+}
+.martin-basics:hover{
+    opacity: .5;
+}
+font{color: red;}
+.nav>ul>li>a{
+    font-family: barlow condensed,sans-serif, serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    
+}
+.nav>ul>li>a:hover{
+    opacity: .5;
+}
+.links{
+    list-style: none;
+    margin-right: 35%;
+    
+}
+.links>li{
+    float: left;
+    margin-left: 70px;
+    
+}
+.adidas-title{
+    text-align: center;
+    font-size: 2em;
+    font-weight:bolder;
+    margin-top: 150px;
+    font-family: barlow condensed,sans-serif;
+    background-color: rgba(0, 0, 0, 0.646);
+    color: white;
+    transition: all 0.3s ease 0s;
+    
+}
+.adidas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 50px;
+}
+.main-content{
+    margin-top: 100px;
+    transition: all 0.3s ease 0s;
+}
+.adidas-container1{
+    background-color:  none;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+procut-name{
+    font-size: 1.5em;
+    
+}
+.product-name{
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-family: barlow condensed,sans-serif;
+    color: black;
+}
+.deets{
+    margin-bottom: 2%;
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 0%;
+    font-weight: bold;
+    font-family: barlow condensed,sans-serif;
+    font-size: small;
+    color: black;
+}
+.price{
+    font-size: .8rem;
+    margin-top: 0;
+    text-align: center;
+    color: red;
+    margin-left: 10%;
+    font-weight: bold;
+    font-family: barlow condensed,sans-serif;
+}
+.adidas-container1>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+    border: white solid 2.5px;
+    
+    
+}
+.adidas-container2{
+    background-color: none;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.adidas-container2>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+.adidas-container3{
+    background-color: linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.adidas-container3>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.nike{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 50px;
+    
+}
+.nike-container1{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    
+}
+.nike-container1>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+    border-color: white;
+}
+.nike-container2{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.nike-container2>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.nike-container3{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.nike-container3>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.nike-title{
+    text-align: center;
+    font-size: 2em;
+    font-weight:bolder;
+    margin-top: 150px;
+    font-family: barlow condensed,sans-serif;
+    background-color: rgba(0, 0, 0, 0.646);
+    color: white;
+}
+.mizuno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 50px;
+}
+.mizuno-container1{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.mizuno-container1>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.mizuno-container2{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.mizuno-container2>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.mizuno-container3{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.mizuno-container3>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.mizuno-title{
+    text-align: center;
+    font-size: 2em;
+    font-weight:bolder;
+    margin-top: 150px;
+    font-family: barlow condensed,sans-serif;
+    background-color: rgba(0, 0, 0, 0.646);
+    color: white;
+}
+    </style>
+
+
+<body>
+
+<!--more section-->
+<a href="#more"></a>
+<!--navigation box-->
+    <div class="nav-container">
+        
+    <div class="box1">
+        <ul>
+            <li><a href=""></a></i></li>
+            <li><a href=""></a></i></li>
+            <li><a href="">  </a></i></li>
+        </ul>
+
+        <h5>FREE SHIPPING AND RETURNS</h5>
+    </div>
+
+    <div class="subbox">
+        <ol>
+            <li><a href="about.html">About</a></li>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="more.html">More</a></li>
+        </ol>
+        
+            
+
+        <div class="icon"   >
+        <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+
+            
+            <div class="logo-link">
+           <a href="#">
+            <h2 id="header">Martin <span>Basics</span></h2>
+            <img class="mb" src="logo1.jpg"></a>
+
+        </div>
+    </div>
+</div>
+
+    <div class="cover">
+    <img src="fashion01.jpg">
+        
+        <div class="text">
+        <h1>Get up to <font>25%</font> off new arrival of items</h1> 
+            <h4>Third Collection 2023</h4>
+
+            <button class="shop-now">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">SHOP NOW</span>
+              </button>
+        </div>
+     
+    </div>
+
+<br><br><br><br><!--about-->
+<div class="main-about">
+    
+    <H2>"home of sustainable basics"</H2>
+    <P>Martin Basics pants include an elasticized waistline, a tapered ankle, and a relaxed fit.
+    Contains a single pocket on the back and two pockets on the sides made of a cotton blend.</P>
+    <p>These track pants are ideal for wearing on the track or during the day.</p>
+
+</div>
+
+<!--clothing-->
+
+<div class="main-content">
+<div class="adidas-title">
+    <p id="adidas">🔥AUTH ADIDAS CLASSIC TRACK PANTS</p>
+</div>
+<div class="adidas">
+    <div class="adidas-container1">
+    <img src="adidas.jpg" alt="adidas">
+    <p class="product-name">Premium Black and White Bold Linings 
+        <p class="deets">waistline: 25-34 (has waist strings) <br> length: 40</p>
+    <span class="price">Php. 380.00</span></p>
+</div>
+<div class="adidas-container2">
+    <img src="adidas1.jpg" alt="adidas">
+    <p class="product-name">Premium Racer Track Pants 
+        <p class="deets">waistline: 25-34 (has waist strings) <br> length: 40</p>
+        <span class="price">Php. 350.00</span></p>
+</div>
+<div class="adidas-container3">
+    <img src="adidas2.jpg" alt="adidas">
+    <p class="product-name">Classic Black Track Suit 
+        <p class="deets">waistline: 25-34 (has waist strings) <br> length: 39</p>
+        <span class="price">Php. 350.00</span></p>
+</div>
+</div>
+
+<div class="nike-title">
+    <p id="nike">🔥AUTH NIKE SWOOSH</p>
+</div>
+
+<div class="nike">
+<div class="nike-container1">
+    <img src="nike.jpg" alt="nike">
+    <p class="product-name">Supreme Embroidered Nike Logo
+        <p class="deets"> waistline: 25-34(has waist strings)<br> length: 40 </p>
+    <span class="price">Php. 399.00</span></p>
+</div>
+<div class="nike-container2">
+    <img src="nike1.jpg" alt="nike">
+    <p class="product-name">Nike Fleece Track Pants 
+        <p class="deets"> waistline: 25-37(has waist strings)<br> length: 40 </p>
+        <span class="price">Php. 350.00</span></p>
+</div>
+<div class="nike-container3">
+    <img src="nike2.jpg" alt="Nike">
+    <p class="product-name">Nike Classic Phenom
+        <p class="deets"> waistline: 25-36(has waist strings)<br> length: 40 </p>
+        <span class="price">Php. 380.00</span></p>
+</div>
+</div>
+
+<div class="mizuno-title">
+    <p id="mizuno">🔥AUTH MIZUNO TRACK PANTS</p>
+</div>
+
+<div class="mizuno">
+<div class="mizuno-container1">
+    <img src="mizuno.jpg" alt="mizuno">
+    <p class="product-name">Mizuno in Muted Track Pants</p>
+        <p class="deets">waistline: 25-34 (has waist string) <br> length: 36</p>
+        
+    <span class="price">Php. 250.00</span>
+</div>
+<div class="mizuno-container2">
+    <img src="mizuno1.jpg" alt="mizuno">
+    <p class="product-name">Classic Mizuno in Linings <br>
+        <p class="deets"> waistline: 25-34 (has waist strings) <Br> length: 40</p>
+        <span class="price">Php. 360.00</span></p>
+</div>
+<div class="mizuno-container3">
+    <img src="mizuno2.jpg" alt="mizuno">
+    <p class="product-name">Mizuno in Clean White 
+        <p class="deets"> waistline: 25-34 (has waist strings) <Br> length: 40</p>
+        <span class="price">Php. 300.00</span></p>
+</div>
+</div>
+
+</div>
+
+<!--footer-->
+<div class="footer"> 
+    <div class="links">
+        <h2 class="socials">FOLLOW MARTIN BASICS</h><br>
+                <b class="facebook" type="button" onclick="location.href='https://www.facebook.com/profile.php?id=100069713097215'">
+                    <i class='bx bxl-facebook-circle bx-md'></i> 
+                </b> <br>
+                <b class="instagram" type="button" onclick="location.href='https://www.instagram.com/martin_basics/'">
+                    <i class='bx bxl-instagram bx-md' ></i> 
+                </b><br>
+                <b class="gmail" type="button" onclick="location.href='mailto:ellainejoymrtn@gmail.com'">
+                    <i class='bx bxl-gmail bx-md' ></i>
+                </b>
+
+    </div>
+    <div class="number">
+        <br><br>
+            Contact Number: 0967 679 0653<br>
+            Address: San Miguel, Lapaz Magalang Pampanga<br>
+            Opening Hours   8:00am to 5:00pm
+        
+    </div>
+</div>
+
+</body>
+</html>
