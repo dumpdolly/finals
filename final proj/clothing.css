@@ -1,0 +1,262 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 200vh;  
+    background-color: linen;
+}
+.nav{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 25PX;
+    display: flex;
+    align-items: center;
+    padding: 10px 2%;
+    top: 0%;
+    left: 0;
+    z-index: 16;
+}
+.martin-basics{
+    border-radius: none;
+    color: white;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2em;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: barlow condensed,sans-serif;
+    color: white;
+    object-fit: cover;
+    font-style: italic;
+    font-weight: bold;
+}
+.martin-basics:hover{
+    opacity: .5;
+}
+font{color: red;}
+.nav>ul>li>a{
+    font-family: barlow condensed,sans-serif, serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    
+}
+.nav>ul>li>a:hover{
+    opacity: .5;
+}
+.links{
+    list-style: none;
+    margin-left: 130px;
+    
+}
+.links>li{
+    float: left;
+    margin-left: 70px;
+    
+}
+.adidas-title{
+    text-align: center;
+    font-size: 2em;
+    font-weight:bolder;
+    margin-top: 150px;
+    font-family: barlow condensed,sans-serif;
+    background-color: rgba(0, 0, 0, 0.646);
+    color: white;
+    transition: all 0.3s ease 0s;
+    
+}
+.adidas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 50px;
+}
+.main-content{
+    margin-top: 100px;
+    transition: all 0.3s ease 0s;
+}
+.adidas-container1{
+    background-color:  linen;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+procut-name{
+    font-size: 1.5em;
+    
+}
+.product-name{
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-family: barlow condensed,sans-serif;
+    color: black;
+}
+.deets{
+    margin-bottom: 2%;
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 0%;
+    font-weight: bold;
+    font-family: barlow condensed,sans-serif;
+    font-size: small;
+    color: black;
+}
+.price{
+    font-size: .8rem;
+    margin-top: 0;
+    text-align: center;
+    color: red;
+    margin-left: 10%;
+    font-weight: bold;
+    font-family: barlow condensed,sans-serif;
+}
+.adidas-container1>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+    border: white solid 2.5px;
+    
+    
+}
+.adidas-container2{
+    background-color: linen;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.adidas-container2>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+.adidas-container3{
+    background-color: linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.adidas-container3>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.nike{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 50px;
+    
+}
+.nike-container1{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    
+}
+.nike-container1>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+    border-color: white;
+}
+.nike-container2{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.nike-container2>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.nike-container3{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.nike-container3>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.nike-title{
+    text-align: center;
+    font-size: 2em;
+    font-weight:bolder;
+    margin-top: 150px;
+    font-family: barlow condensed,sans-serif;
+    background-color: rgba(0, 0, 0, 0.646);
+    color: white;
+}
+.mizuno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 50px;
+}
+.mizuno-container1{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.mizuno-container1>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.mizuno-container2{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.mizuno-container2>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.mizuno-container3{
+    background-color:  linen(0, 0, 0, 0.646);
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+.mizuno-container3>img{
+    width: 100%;
+    border-radius: 2px;
+    height: 300px;
+    object-fit: cover;
+}
+.mizuno-title{
+    text-align: center;
+    font-size: 2em;
+    font-weight:bolder;
+    margin-top: 150px;
+    font-family: barlow condensed,sans-serif;
+    background-color: rgba(0, 0, 0, 0.646);
+    color: white;
+}
