@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lab Task 3</title>
+
+</head>
+        <style>
+            .all
+            {
+                text-align: center;
+            }
+            .CH
+            {
+                color: red;
+            }
+        </style>
+
+        <script>
+            function shirtexpenses()
+            {
+                first = "10";
+                document.getElementById("shirt").innerHTML = "T-shirt: $" + first;
+                two = "8";
+                document.getElementById("medjas").innerHTML = "Socks: $" + two;
+                third = "20";
+                document.getElementById("eat").innerHTML = "Dinner: $" + third;
+
+                shirtexpenses = parseInt(first) + parseInt(two) + parseInt(third);
+                document.getElementById("shirtexpenses").innerHTML = "Total Cost: $" + shirtexpenses;
+            
+            }
+
+            function accbalance()
+            {
+                Blnce = "100";
+                lnch = "20";
+                dnnr = "50";
+                job= "200";
+
+                accbalance = parseInt(Blnce) - parseInt(lnch) - parseInt(dnnr) + parseInt(job);
+                document.getElementById("accbalance").innerHTML = "Total Amount Balance: $" + accbalance;
+
+            }
+        </script>
+
+<body>
+    <div class="all">
+        <h3 class="CH">Challenge Exercise</h3>
+        <h4>You order a T-shirt for $10, socks for $8, and dinner plates for $20.<br> </h4>
+
+        <p id="shirt">T-shirt: $10</p>
+        <p id="medjas">Socks: $8</p>
+        <p id="eat">Dinner: $20</p>
+
+        <input type="button" value="Total" onclick="shirtexpenses()">
+        <p id="shirtexpenses"><br></p>
+    </div>
+
+    <div class="all">
+        <h4>Your bank account has $100, you spend $20 on lunch, $50 on dinner, and earn $200 from your job.<br>
+            Calculate how much money you have.</h4>
+
+        <p id="balance" style="font-weight: bold;">Account Balance: $100</p>
+        <p style="font-weight: bold;">Expenses Cost</p>
+            <p id="lunch">Lunch: $20</p>
+            <p id="dinner">Dinner: $50</p>
+        <p style="font-weight: bold;">Earnings </p>
+            <p id="job">Job: $200</p>
+
+        <input type="button" value="Amount Balance" onclick="accbalance()">
+        <p id="accbalance">Total Amount Balance:</p>
+    </div>
+
+
+</body>
+</html>
